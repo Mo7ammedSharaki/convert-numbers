@@ -1,7 +1,7 @@
 ![GitHub Follow](https://img.shields.io/github/followers/Mo7ammedSharaki?color=blue&label=follow%20me&style=social)
  
 ![Twitter Follow](https://img.shields.io/twitter/follow/Mo7ammedSharaki?color=blue&label=Follow%20me&logo=twitter&logoColor=blue&style=for-the-badge)
-# number converter
+# number converter using C++
 ## this project to convert number to [octal , decmail , binary , hex ]
 ------------------------------------------------------------------------------------------------
 ![app](https://user-images.githubusercontent.com/67878024/120396827-e8bd2d00-c33f-11eb-8a2d-00039b4ca2a7.gif)
