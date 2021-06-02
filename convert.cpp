@@ -11,12 +11,12 @@ void octal(int dnumber)
         dnumber /= 8;
         placevalue *= 10;
     }
-    cout << octal << endl;
+    cout << octal;
 }
 
 void decmail(int dnumber)
 {
-    cout << dnumber << endl;
+    cout << dnumber;
 }
 
 void binary(int dnumber)
@@ -41,7 +41,7 @@ int main()
 {
     string type;
     int number;
-    cout << "enter the type to convert\n1- octal\n2- binary\n3-decmail : ";
+    cout << "enter the type to convert\n1- octal\n2- binary\n3-decmail\n4-select all : ";
     cin >> type;
     cout << "enter the value : ";
     cin >> number;
@@ -56,6 +56,21 @@ int main()
     else if (type == "decimal")
     {
         decmail(number);
+    }
+    else if (type == "select")
+    {
+        cout << "the " << number
+             << " = ";
+        octal(number);
+        cout << "  Octal\n";
+        cout << "the " << number
+             << " = ";
+        binary(number);
+        cout << "  Binary\n";
+        cout << "the " << number
+             << " = ";
+        decmail(number);
+        cout << "  dicmail\n";
     }
     return 0;
 }
