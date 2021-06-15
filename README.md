@@ -9,14 +9,17 @@
 ------------------------------------------------------------------------------------------------
 # add value to convert 👨‍💻
 ```diff
- clang++-7 -pthread -std=c++17 -o main main.cpp
- ./main
 enter the type to convert
 1- octal
 2- binary
-3-decmail : octal
-enter the value : 100
-144
+3-decmail
+4-hex
+5-select all : select
+enter the value : 2545
+the 2545 = 4761  Octal
+the 2545 = 100111110001  Binary
+the 2545 = 2545  dicmail
+the 2545 = 9F1  hex
 ```
 ![image](https://user-images.githubusercontent.com/67878024/120397271-ac3e0100-c340-11eb-9553-bdb551ecf088.png)
 # thanks for see my project ⠕
