@@ -18,7 +18,32 @@ void decmail(int dnumber)
 {
     cout << dnumber;
 }
+void hex(int n)
+{
+    char hexnumber[100];
+    int i = 0;
+    while (n != 0)
+    {
+        int temp = 0;
+        temp = n % 16;
+        if (temp < 10)
+        {
+            hexnumber[i] = temp + 48;
+            i++;
+        }
+        else
+        {
+            hexnumber[i] = temp + 55;
+            i++;
+        }
+        n = n / 16;
+    }
 
+    for (int j = i - 1; j >= 0; j--)
+    {
+        cout << hexnumber[j];
+    }
+}
 void binary(int dnumber)
 {
     for (int i = 11; i >= 0; i--)
@@ -41,7 +66,7 @@ int main()
 {
     string type;
     int number;
-    cout << "enter the type to convert\n1- octal\n2- binary\n3-decmail\n4-select all : ";
+    cout << "enter the type to convert\n1- octal\n2- binary\n3-decmail\n4-hex\n5-select all : ";
     cin >> type;
     cout << "enter the value : ";
     cin >> number;
@@ -57,6 +82,10 @@ int main()
     {
         decmail(number);
     }
+    else if (type == "hex")
+    {
+        hex(number);
+    }
     else if (type == "select")
     {
         cout << "the " << number
@@ -71,6 +100,14 @@ int main()
              << " = ";
         decmail(number);
         cout << "  dicmail\n";
+        cout << "the " << number
+             << " = ";
+        hex(number);
+        cout << "  hex\n";
+    }
+    else
+    {
+        cout << "return again";
     }
     return 0;
 }
